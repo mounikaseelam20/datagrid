@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="datagrid.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="datagrid.js"></script>
+    <div id="table">
+        <h2>column master</h2>
+        <button type="button" onclick="myFunction()">addcolumn</button>
+        <button type="button">removecolumn</button>
+        <table id="myTable">
+            <tr>
+                <th></th>
+                <th>column name</th>
+                <th>column type</th>
+                <th>editable</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk" />
+                </td>
+                <td>1</td>
+                <td></td>
+                <td>y</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk" />
+                </td>
+                <td>b</td>
+                <td></td>
+                <td>n</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk" />
+                </td>
+                <td>c</td>
+                <td></td>
+                <td>y</td>
+            </tr>
+        </table>
+        <h2>result data grid</h2>
+        <button type="button">addrow</button>
+        <button type="button">removerow</button>
+        <button type="button">export to json</button>
+        <table>
+            <tr>
+                <th></th>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk" />
+                </td>
+                <td>1</td>
+                <td></td>
+                <td>y</td>
+                <td>
+                    <select>
+                        <option>d1</option>
+                        <option>d2</option>
+                        <option>d3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk" />
+                </td>
+                <td>b</td>
+                <td></td>
+                <td>n</td>
+                <td>
+                    <select>
+                        <option>d1</option>
+                        <option>d2</option>
+                        <option>d3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk" />
+                </td>
+                <td>c</td>
+                <td></td>
+                <td>y</td>
+                <td>
+                    <select>
+                        <option>d1</option>
+                        <option>d2</option>
+                        <option>d3</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="column">
+        column name:
+        <input type="text" name="cname">
+        <br>
+        <br> column type:
+        <select>
+            <option>string</option>
+            <option>number</option>
+            <option>array</option>
+        </select>
+        <br>
+        <br> Editable:
+        <select>
+            <option>yes</option>
+            <option>no</option>
+        </select><br><br>
+        <button type="button" onclick="close()">ok</button>
+</body>
+
+</html>
